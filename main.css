@@ -1,346 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+
 * {
     padding: 0;
     margin: 0;
+    border: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 li {
     list-style: none;
 }
 
+.container {
+    padding: 0 64px;
+}
+
+.first {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .header {
-    width: 1600px;
-    height: 69px;
-    margin: 41px 160px;
-}
-
-.nav_header {
     width: 100%;
-    height: 69px;
+    padding: 41px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 80px;
 }
 
-.nav_left {
+.header__logo {
     font-size: 32px;
+    font-family: 'Abhaya Libre';
+    font-weight: 700;
 }
 
-.nav_center {
-    font-size: 16px;
+.header__nav {
     display: flex;
-    gap: 42.73px;
+    gap: 42px;
+    font-size: 22px;
 }
 
-.nav_right {
-    color: white;
-    font-size: 20px;
-    background-color: black;
+.header__btn {
+    width: 169px;
     height: 69px;
-    width: 199px;
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 170px;
+}
+
+.main__left {
+    position: relative;
+}
+
+.main__text {
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 36.94px;
+    width: 396px;
+    margin-top: 101px;
+}
+
+.main__title {
+    font-family: 'Abhaya Libre';
+    font-size: 192px;
+    font-weight: 700;
+    margin-top: 116px;
+}
+
+.main__img {
+    width: 30vw;
+    height: 30vw;
+    position: absolute;
+    top: 0;
+    right: 400px;
+    left: 23vw;
+    z-index: -1;
+}
+
+.main__img img {
+    width: 100%;
+    height: 100%;
+}
+
+.main__right {
+    position: relative;
+}
+
+.main__right-subtitle {
+    font-size: 16px;
+}
+
+.main__right-title {
+    font-size: 32px;
+    margin-top: 21px;
+
+}
+
+.main__right-btn {
+    width: 161px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border: 1px solid black;
+    margin-top: 21px;
+}
+
+.main__right-img {
+    margin-top: 65px;
+}
+
+.apex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 191px;
+}
+
+.apex__left {
+    position: relative;
+}
+
+.apex__img {
+    height: 737px;
+    width: 553px;
+}
+
+.apex__right {
+    position: relative;
+    right: 400px;
+}
+
+.apex__right-subtitle {
+    font-size: 24px;
+    margin-top: 39px;
+}
+
+.apex__right-title {
+    font-size: 128px;
+    font-family: 'Abhaya Libre';
+    margin-top: 31px;
+
+}
+
+.apex__right-text {
+    font-size: 28px;
+    margin-top: 25px;
+}
+
+.apex__right-btn {
+    width: 215.38px;
+    height: 69.56px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-color: #000;
+    margin-top: 37px;
+}
+
+.chief {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 209px;
+
+}
+
+.chief__left {
+    position: relative;
+}
+
+.chief__left-title {
+    font-size: 88px;
+    font-family: 'Abhaya Libre';
+    margin-top: 52px;
+
+}
+
+.chief__left-text-1 {
+    font-size: 18px;
+    margin-top: 34px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
 }
 
-.text1 {
-    width: 396px;
-    height: 111px;
-    margin: 191px 245px;
+.chief__left-text-p {
+    font-size: 98px;
+    font-family: 'Abhaya Libre';
 }
 
-.text_img {
-    font-size: 122px;
-    margin-left: 280px;
+.major {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 165px;
+}
+
+.majot__left {
+    position: relative;
+}
+
+.major__left-img-1 {
+    height: 374px;
+    width: 561px;
+    z-index: -1;
+}
+
+.major__left-img-2 {
+    height: 374px;
+    width: 524px;
+    z-index: 2;
+    margin-left: 246px;
+    position: relative;
+    bottom: 100px;
+}
+
+.major__right {
+    position: relative;
+}
+
+.major__right-title {
+    font-size: 88px;
+    font-family: 'Abhaya Libre';
+    margin-top: 7px;
+}
+
+.major__right-text-1 {
+    font-size: 24px;
+    margin-top: 62px;
+    margin-right: 260px;
+}
+
+.great {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 165px;
+}
+
+.great__upper {
     position: relative;
     bottom: 70px;
-
+    right: 50px;
 }
 
-.img1 {
-    width: 435px;
-    height: 435px;
-    background-image: url("hero1.png");
-    margin-left: 540px;
+.great__upper-title {
+    font-size: 98px;
+    font-family: 'Abhaya Libre';
+}
+
+.great__left {
     position: relative;
-    bottom: 640px;
+    top: 177px;
 }
 
-.p1 {
-    font-size: 122px;
-    color: white;
-    padding-top: 280px;
-}
-
-.text2 {
-    width: 124px;
-    height: 16px;
-    font-size: 14px;
-    position: relative;
-    left: 1100px;
-    bottom: 1080px;
-}
-
-.text3 {
-    position: relative;
-    left: 1100px;
-    bottom: 1060px;
-    height: 84px;
-    width: 438px;
-    font-size: 30px;
-}
-
-.text4 {
-    height: 52px;
-    width: 161px;
-    font-size: 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid black;
-    padding: 0 40px;
-    position: relative;
-    left: 1100px;
-    bottom: 1060px;
-}
-
-.img2 {
-    width: 375px;
-    height: 375px;
-    background-image: url("hero2.png");
-    position: relative;
-    left: 1100px;
-    bottom: 1020px;
-}
-
-.img3 {
-    width: 453px;
-    height: 637px;
-    position: relative;
-    left: 251px;
-    bottom: 850px;
-    background-image: url("hero3.png");
-}
-
-.text5 {
+.great__left-subtitle {
     font-size: 24px;
-    position: relative;
-    left: 820px;
-    bottom: 1450px;
 }
 
-.text6 {
-    font-size: 90px;
-    position: relative;
-    left: 800px;
-    bottom: 1440px;
+.great__left-title {
+    font-size: 58px;
+    font-family: 'Abhaya Libre';
+    margin-top: 54px;
 }
 
-.text7 {
-    font-size: 28px;
-    position: relative;
-    left: 820px;
-    bottom: 1430px;
-}
-
-.text8 {
-    font-size: 20px;
-    position: relative;
-    left: 820px;
-    bottom: 1410px;
-    height: 69.56px;
-    width: 215.38px;
-    color: white;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 50px;
-}
-
-.text9 {
-    font-size: 80px;
-    position: relative;
-    bottom: 1050px;
-    left: 251px;
-}
-
-.apex_text {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 586px;
-    height: 102px;
-    position: relative;
-    bottom: 1040px;
-    left: 220px;
-    padding: 40px;
-}
-
-.text10 {
+.great__left-text {
     font-size: 18px;
+    margin-top: 34px;
 }
 
-.text11 {
-    font-size: 80px;
-}
-
-.apex_text2 {
+.great__left-price {
+    font-size: 19px;
+    margin-top: 54px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 606px;
-    height: 102px;
-    position: relative;
-    bottom: 1030px;
-    left: 215px;
-    padding: 40px;
 }
 
-.img4 {
-    width: 733px;
-    height: 425px;
-    background-image: url("hero4.png");
-    position: relative;
-    bottom: 1450px;
-    left: 900px;
-}
-
-.img5 {
-    height: 274px;
-    width: 461px;
-    background-image: url("hero5.png");
-    position: relative;
-    left: 261px;
-    bottom: 1300px;
-}
-
-.img6 {
-    height: 284px;
-    width: 424px;
-    background-image: url("hero6.png");
-    position: relative;
-    left: 451px;
-    bottom: 1350px;
-}
-
-.text12 {
-    font-size: 80px;
-    position: relative;
-    left: 950px;
-    bottom: 1870px;
-}
-
-.text13 {
-    font-size: 18px;
-    position: relative;
-    left: 960px;
-    bottom: 1840px;
-}
-
-.text14 {
-    font-size: 18px;
-    position: relative;
-    left: 960px;
-    bottom: 1800px;
-}
-
-.text15 {
-    font-size: 80px;
-    position: relative;
-    bottom: 1500px;
-    left: 500px;
-}
-
-.text16 {
-    font-size: 24px;
-    position: relative;
-    bottom: 1400px;
-    left: 261px;
-}
-
-.text17 {
-    font-size: 50px;
-    position: relative;
-    bottom: 1300px;
-    left: 261px;
-}
-
-.text18 {
-    font-size: 18px;
-    position: relative;
-    bottom: 1250px;
-    left: 261px;
-}
-
-.apex_text3 {
-    position: relative;
-    bottom: 1200px;
-    left: 241px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 73px;
-    width: 394px;
-    padding: 20px;
-}
-
-.text19 {
+.great__left-buy {
     font-size: 35px;
+    font-family: 'Abhaya Libre';
 }
 
-.text20 {
-    font-size: 18px;
-}
-
-.apex_text4 {
+.great__left-btn {
     width: 235px;
     height: 88px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    border: 1px solid black;
+    margin-top: 34px;
+}
+
+.great__center {
+    position: relative;
+
+}
+
+.great__center-img {
+    position: relative;
+    left: 230px;
+}
+
+.great__right {
+    position: relative;
+    top: 177px;
+    right: 240px;
+}
+
+.great__right-subtitle-upper {
+    font-size: 24px;
+    line-height: 40px
+}
+
+.great__right-subtitle {
+    margin-top: 73px;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.primal {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 65px;
+    width: 100%;
+    margin-top: 155px;
+}
+
+.primal__center {
+    position: relative;
+    bottom: 96px;
+}
+
+.primal__center-title {
+    font-size: 93px;
+    font-family: 'Abhaya Libre';
+}
+
+.primal__center-text {
+    font-size: 20px;
+    margin-top: 45px;
+}
+
+.primal__right {
+    position: relative;
+    bottom: 53px;
+}
+
+.primal__right-text {
+    font-size: 19px;
+    margin-top: 23px;
+}
+
+.lower {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 115px;
+}
+
+.lower__left {
+    margin-top: 187px;
+}
+
+.lower__left-text {
+    font-size: 24px;
+}
+
+.lower__left-btn {
+    margin-top: 43px;
+    width: 213px;
+    height: 73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
     border: 1px solid black;
-    position: relative;
-    bottom: 1150px;
-    left: 261px;
 }
 
-.img7 {
-    background-image: url("hero7.png");
-    height: 811px;
-    width: 457px;
-    position: relative;
-    bottom: 1800px;
-    left: 750px;
+.footer {
+    margin-top: 111px;
+    width: 100%;
+    height: 550px;
+    background-color: #000;
+    color: #fff;
+    padding: 0 64px;
 }
 
-.text22 {
-    font-size: 24px;
-    position: relative;
-    bottom: 2580px;
-    left: 1300px;
+.under {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.text23 {
-    font-size: 24px;
+.under__left {
     position: relative;
-    bottom: 2460px;
-    left: 1300px;
 }
 
-.text24 {
-    font-size: 24px;
-    position: relative;
-    bottom: 2400px;
-    left: 1300px;
+.under__left-title {
+    font-size: 54px;
+    font-family: 'Abhaya Libre';
+    margin-top: 88px;
 }
 
-.text25 {
-    font-size: 24px;
+.under__left-text {
+    font-size: 18px;
+    margin-top: 43px;
+}
+
+.under__left-footer {
+    font-size: 18px;
+    margin-top: 177px;
+}
+
+.under__right {
     position: relative;
-    bottom: 2330px;
-    left: 1300px;
+    right: 331px;
+}
+
+.under__right-subtitle {
+    font-size: 28px;
+    margin-top: 110px;
+
+}
+
+.under__right-input {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 53px;
+
+}
+
+.under__right-underline {
+    width: 571px;
+    height: 1px;
+    background-color: #fff;
+    top: 12px;
+    position: relative;
+}
+
+.under__right-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-right: 200px;
+}
+
+.under__right-icons {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 5px;
+    left: 522px;
+    padding: 0 200px;
 }
